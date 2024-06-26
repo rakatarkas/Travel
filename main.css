@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=Magra:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100hv;
+  max-width: 3735px;
+  width: 1440px;
+  height: 3735px;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.icon {
+  position: relative;
+  left: 85px;
+  margin: 94px;
+}
+
+
+header {
+  width: 1440px;
+  height: 90px;
+  background: rgba(242, 120, 92, 0.7);
+  box-shadow: 0px 4px 4px 0px #0D606F80;
+  margin: 0px;
+  padding-top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  white-space: nowrap;
+  position: absolute;
+
+}
+
+#preview {
+  width: 1440px;
+  height: 765px;
+  background-image: url(img.asa/bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+ul {
+  width: 527px;
+  list-style-type: none; /* Убирает маркеры (точки) */
+  display: flex;
+  gap: 42px;
+  padding-right: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: Red Hat Text;
+  font-size: 16px;
+}
+
+
+header h1 {
+margin: 0;
+padding: 0;
+width: 180px;
+height: 31px;
+gap: 0px;
+opacity: 0px;
+color: #FFFFFF;
+font-family: Magra;
+font-size: 32px;
+
+}
+
+#tni {
+  width: 216px;
+  height: 31px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -7px;
+
+}
+
+button {
+  padding: 10px 30px 10px 30px;
+  color: #FFFFFF;
+  background-color: rgba(13, 96, 111, 1);
+  box-shadow: 0px 4px 4px 0px rgba(13, 96, 111, 0.5);
+  font-family: Red Hat Text;
+  font-size: 16px;
+  border-radius: 10px;
+  border-style: none;
+  position: relative;
+  right: 120px;
+  cursor: pointer;
+}
+
+
+#square {
+  padding-top: 100px;
+  padding-left: 140px;
+  margin: 0px;
+  width: 892px;
+  height: 122px;
+  text-align:justify;
+  line-height: 30px;
+}
+
+#p1 {
+  font-family: Aleo;
+  color: #FFFFFF;
+  width: 892px;
+ opacity: 0px;
+ font-size: 80px;
+ font-weight: 700;
+ line-height: 96px;
+ text-align: left;
+ margin-top: 10px;
+ margin-bottom: 10px;
+ margin-left: 10px;
+
+}
+
+#p2 {
+  padding: 10px;
+  padding-bottom: 40px;
+  margin: 0px;
+  border: 0px;
+  width: 780px;
+  height: 24px;
+  opacity: 0px;
+  font-family: Aleo;
+  size: 22px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  color: #FFFFFF;
+
+}
+
+#p3 {
+ padding-top: 32px;
+ padding-left: 50px;
+ border: 0px;
+ color:rgba(242, 120, 92, 0.7);
+ width: 892px;
+ height: 95px;
+ font-family: Aleo;
+ font-size: 24px;
+ font-style: italic;
+ font-weight: 400;
+ line-height: 28.8px;
+ text-align: left;
+ 
+
+}
+
+#search {
+ background-color:rgba(255, 255, 255, 0.7);
+ width: 892px;
+ height: 95px;
+ top: 416px;
+ left: 120px;
+ gap: 0px;
+ border-radius: 16px;
+}
+
+#another {
+ font-size: 24px;
+ height: 59px;
+ border-radius: 10px;
+ opacity: 0px;
+ position: relative;
+ left: 650px;
+ top: -133px;
+ margin: 0px;
+}
+
+#steps {
+  width: 1440px;
+  height: 247px;
+  margin-top: 50px;
+  margin-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+h2 {
+  height: 53px;
+  font-family: Red Hat Text;
+  color:rgba(242, 120, 92, 1);
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 52.92px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+#p4 {
+  width: 247px;
+  height: 24px;
+  font-family: Aleo;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgba(13, 96, 111, 1);
+  white-space: nowrap;
+  margin-left: -70px;
+  margin-top: -20px;
+
+}
+
+#p5 {
+  width: 222px;
+  height: 24px;
+  font-family: Aleo;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgba(13, 96, 111, 1);
+  white-space: nowrap;
+  margin-left: -70px;
+  margin-top: -27px;
+
+}
+
+#p6 {
+  width: 317px;
+  height: 24px;
+  top: 130px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Aleo;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgba(13, 96, 111, 1);
+  white-space: nowrap;
+  margin-left: -100px;
+  margin-top: -20px;
+
+
+}
+
+.cubes {
+  width: 100px;
+  height: 100px;
+}
+
+#cubes {
+  width: 1177px;
+  height: 154px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 200px;
+  position: relative;
+  left: 130px;
+}
+
+#bicyle {
+  position: relative;
+  top: -78px;
+  left: 23px;
+}
+
+#calendar{
+  position: relative;
+  top: -78px;
+  left: 23px;
+}
+
+#plane {
+  position: relative;
+  top: -75px;
+  left: 21px;
+
+}
+
+#destinations {
+  width: 100%;
+  height: 1042px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+#photos {
+  height: 800px;
+  gap: 60px;
+  display: flex;
+  background-size: cover;
+}
+
+#destination1 {
+  width: 800px;
+  height: 800px;
+  border-radius: 0px 16px 16px 0px;
+  background-image: url(img.asa/sea.jpg);
+}
+
+#destination2 {
+  width: 800px;
+  height: 800px;
+  border-radius: 16px 16px 16px 16px;
+  font-size: 32px;
+  background-image: url(img.asa/japan.jpg);
+}
+
+#destination3 {
+  width: 800px;
+  height: 800px;
+  border-radius: 16px 0px 0px 16px;
+  background-image: url(img.asa/usa.jpg);
+}
+
+.country {
+  font-weight: 500;
+  font-size: 32px;
+  font-family: Red Hat Text;
+  color: rgba(255, 255, 255, 1);
+  width: 108px;
+  height: 42px;
+  position: relative;
+  top: 718px;
+  margin-left: 30px;
+}
+
+#circles {
+  width: 80px;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin: 30px;
+
+}
+
+#c1 {
+  width: 20px;
+  height: 20px;
+  background: rgba(242, 120, 92, 0.5);
+  border-radius: 10px;
+}
+
+#c2 {
+  width: 20px;
+  height: 20px;
+  background: rgba(242, 120, 92, 1);
+  border-radius: 10px;
+
+}
+
+#c3 {
+  width: 20px;
+  height: 20px;
+  background: rgba(242, 120, 92, 0.5);
+  border-radius: 10px;
+
+}
+
+#arrow {
+  background-image: url(img.asa/biarrow_right.png);
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  padding: 8.75px 2.5px 8.75px 2.5px;
+  position: relative;
+  top: 17px;
+
+}
+
+#more {
+  width: 228px;
+  height: 59px;
+  opacity: 1;
+  font-size: 24px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  position: relative;
+  left: -4px;
+
+}
+
+#stories {
+  margin-top: 100px;
+  background-image: url(img.asa/laken.jpg);
+  background-size: 100% 1500px;
+  background-repeat: no-repeat;
+
+}
+
+#staries {
+  height: 1400px;
+  background: rgba(255, 255, 255, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
+.h3 {
+  width: 760px;
+  height: 42px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Aleo;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 42px;
+  text-align: left;
+  color: rgba(13, 96, 111, 1);
+  margin: 0;
+
+}
+
+.ps {
+  width: 760px;
+  height: 184px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Aleo;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: rgba(13, 96, 111, 1);
+
+}
+
+span {
+  font-family: Aleo;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  text-decoration: underline;
+  cursor: pointer;
+
+}
+
+.img {
+  width: 400px;
+  height: 250px;
+  border-radius: 16px;
+  opacity: 0px;
+  box-shadow: 0px 4px 4px 0px rgba(13, 96, 111, 1);
+
+}
+
+.stories {
+  width: 1200px;
+  height: 250px;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 20px;
+  
+}
+
+.hnp {
+  width: 1200px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+}
+
+#footer {
+  width: 728.96px;
+  height: 25px;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 30px;
+  border: 0;
+  align-items: center;
+  justify-content: center;
+  gap: 250px;
+  text-wrap: nowrap;
+  position: relative;
+  left: 500px;
+
+}
+
+#copyright {
+  width: 260px;
+  height: 21px;
+  font-family: Red Hat Text;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21.17px;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+  margin-left: 50px;
+
+}
+
+
+#socialmedia {
+  width:  140.96px;
+  height: 33.65px;
+  gap: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center; ;
+}
