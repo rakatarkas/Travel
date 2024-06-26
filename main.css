@@ -7,9 +7,7 @@ html {
 }
 
 body {
-  min-height: 100hv;
-  max-width: 3735px;
-  width: 1440px;
+  width: 100%;
   height: 3735px;
   margin: 0;
   padding: 0;
@@ -24,7 +22,7 @@ body {
 
 
 header {
-  width: 1440px;
+  width: 100%;
   height: 90px;
   background: rgba(242, 120, 92, 0.7);
   box-shadow: 0px 4px 4px 0px #0D606F80;
@@ -39,9 +37,9 @@ header {
 }
 
 #preview {
-  width: 1440px;
+  width: 100%;
   height: 765px;
-  background-image: url(img.asa/bg.jpg);
+  background-image: url(img/bg.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -310,7 +308,7 @@ h2 {
   width: 800px;
   height: 800px;
   border-radius: 0px 16px 16px 0px;
-  background-image: url(img.asa/sea.jpg);
+  background-image: url(img/sea.jpg);
 }
 
 #destination2 {
@@ -318,14 +316,14 @@ h2 {
   height: 800px;
   border-radius: 16px 16px 16px 16px;
   font-size: 32px;
-  background-image: url(img.asa/japan.jpg);
+  background-image: url(img/japan.jpg);
 }
 
 #destination3 {
   width: 800px;
   height: 800px;
   border-radius: 16px 0px 0px 16px;
-  background-image: url(img.asa/usa.jpg);
+  background-image: url(img/usa.jpg);
 }
 
 .country {
@@ -374,7 +372,7 @@ h2 {
 }
 
 #arrow {
-  background-image: url(img.asa/biarrow_right.png);
+  background-image: url(img/biarrow_right.png);
   width: 40px;
   height: 40px;
   background-repeat: no-repeat;
@@ -401,7 +399,7 @@ h2 {
 
 #stories {
   margin-top: 100px;
-  background-image: url(img.asa/laken.jpg);
+  background-image: url(img/laken.jpg);
   background-size: 100% 1500px;
   background-repeat: no-repeat;
 
