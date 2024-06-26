@@ -8,7 +8,7 @@ html {
 
 body {
   width: 100%;
-  height: 3735px;
+  height: 100%;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -16,14 +16,14 @@ body {
 
 .icon {
   position: relative;
-  left: 85px;
-  margin: 94px;
+  left: 40%;
+  margin: 43%;
 }
 
 
 header {
   width: 100%;
-  height: 90px;
+  height: 12%;
   background: rgba(242, 120, 92, 0.7);
   box-shadow: 0px 4px 4px 0px #0D606F80;
   margin: 0px;
@@ -37,153 +37,138 @@ header {
 }
 
 #preview {
+  height: 20%;
   width: 100%;
-  height: 765px;
   background-image: url(img/bg.jpg);
-  background-position: center;
   background-size: cover;
 }
 
+nav {
+  width: 40%;
+  
+}
+
 ul {
-  width: 527px;
-  list-style-type: none; /* Убирает маркеры (точки) */
+  list-style-type: none; 
   display: flex;
-  gap: 42px;
-  padding-right: 30px;
+  gap: 10%;
 }
 
 a {
   text-decoration: none;
   color: #FFFFFF;
   font-family: Red Hat Text;
-  font-size: 16px;
+  font-size: 145%;
 }
 
 
 header h1 {
-margin: 0;
-padding: 0;
-width: 180px;
-height: 31px;
-gap: 0px;
-opacity: 0px;
-color: #FFFFFF;
-font-family: Magra;
-font-size: 32px;
+  margin: 0;
+  padding: 0;
+  width: 20%;
+  height: 150%;
+  gap: 0px;
+  opacity: 0px;
+  color: #FFFFFF;
+  font-family: Magra;
+  font-size: 250%;
 
 }
 
 #tni {
-  width: 216px;
-  height: 31px;
+  width: 10%;
+  height: 25%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   position: relative;
-  top: -7px;
+  top: -10%;
 
 }
 
 button {
-  padding: 10px 30px 10px 30px;
+  padding: 0.6% 1.8%;
   color: #FFFFFF;
   background-color: rgba(13, 96, 111, 1);
   box-shadow: 0px 4px 4px 0px rgba(13, 96, 111, 0.5);
   font-family: Red Hat Text;
-  font-size: 16px;
+  font-size: 145%;
   border-radius: 10px;
   border-style: none;
   position: relative;
-  right: 120px;
+  right: 10%;
   cursor: pointer;
 }
 
 
 #square {
-  padding-top: 100px;
-  padding-left: 140px;
+  padding-top: 10%;
+  padding-left: 10%;
+  padding-bottom: 20%;
   margin: 0px;
-  width: 892px;
-  height: 122px;
-  text-align:justify;
-  line-height: 30px;
 }
 
 #p1 {
   font-family: Aleo;
   color: #FFFFFF;
-  width: 892px;
- opacity: 0px;
- font-size: 80px;
- font-weight: 700;
- line-height: 96px;
- text-align: left;
- margin-top: 10px;
- margin-bottom: 10px;
- margin-left: 10px;
+  width: 60%;
+  height: 50%;
+  opacity: 0px;
+  font-size: 600%;
+  font-weight: 700;
 
 }
 
 #p2 {
-  padding: 10px;
-  padding-bottom: 40px;
+  padding-bottom: 1.5%;
   margin: 0px;
   border: 0px;
-  width: 780px;
-  height: 24px;
   opacity: 0px;
   font-family: Aleo;
-  size: 22px;
+  font-size: 150%;
   font-style: italic;
   font-weight: 700;
-  line-height: 24px;
   text-align: left;
   color: #FFFFFF;
-
+ 
 }
 
 #p3 {
- padding-top: 32px;
- padding-left: 50px;
+  width: 45%;
  border: 0px;
  color:rgba(242, 120, 92, 0.7);
- width: 892px;
- height: 95px;
  font-family: Aleo;
- font-size: 24px;
+ font-size: 180%;
  font-style: italic;
- font-weight: 400;
- line-height: 28.8px;
- text-align: left;
- 
-
+ margin: 0;
 }
 
 #search {
  background-color:rgba(255, 255, 255, 0.7);
- width: 892px;
- height: 95px;
- top: 416px;
- left: 120px;
- gap: 0px;
+ width: 62%;
  border-radius: 16px;
+ display: flex;
+ align-items: center;
+ justify-content: flex-end;
+ gap: 40%;
+ padding: 1.5%;
 }
 
 #another {
- font-size: 24px;
- height: 59px;
- border-radius: 10px;
- opacity: 0px;
- position: relative;
- left: 650px;
- top: -133px;
- margin: 0px;
+  width: 24%;
+  font-size: 180%;
+  border-radius: 10px;
+  opacity: 0px;
+  position: relative;
+  margin: 0px;
+  padding: 1.9%;
+ 
 }
 
 #steps {
+  height: 15%;
   width: 100%;
-  height: 247px;
   margin-top: 50px;
   margin-bottom: 70px;
   display: flex;
@@ -287,7 +272,7 @@ h2 {
 
 #destinations {
   width: 100%;
-  height: 1042px;
+  height: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -295,21 +280,22 @@ h2 {
 
 
 #photos {
-  height: 800px;
+  width: 100%;
+  height: 20%;
   gap: 60px;
   display: flex;
   background-size: cover;
 }
 
 #destination1 {
-  width: 800px;
+  width: 22.5%;
   height: 800px;
   border-radius: 0px 16px 16px 0px;
   background-image: url(img/sea.jpg);
 }
 
 #destination2 {
-  width: 800px;
+  width: 55%;
   height: 800px;
   border-radius: 16px 16px 16px 16px;
   font-size: 32px;
@@ -317,7 +303,7 @@ h2 {
 }
 
 #destination3 {
-  width: 800px;
+  width: 22.5%;
   height: 800px;
   border-radius: 16px 0px 0px 16px;
   background-image: url(img/usa.jpg);
@@ -397,17 +383,18 @@ h2 {
 #stories {
   margin-top: 100px;
   background-image: url(img/laken.jpg);
-  background-size: 100% 1500px;
+  background-size: cover;
   background-repeat: no-repeat;
 
 }
 
 #staries {
-  height: 1400px;
+  height: 30%;
   background: rgba(255, 255, 255, 0.7);
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 3%;
 
 }
 
@@ -462,7 +449,7 @@ span {
 }
 
 .stories {
-  width: 1200px;
+  width: 150%;
   height: 250px;
   display: flex;
   flex-direction: row-reverse;
@@ -480,11 +467,10 @@ span {
 
 #footer {
   width: 728.96px;
-  height: 25px;
   display: flex;
   flex-direction: row;
   margin: 0;
-  padding: 30px;
+  padding: 1%;
   border: 0;
   align-items: center;
   justify-content: center;
@@ -497,7 +483,6 @@ span {
 
 #copyright {
   width: 260px;
-  height: 21px;
   font-family: Red Hat Text;
   font-size: 16px;
   font-weight: 500;
@@ -510,8 +495,7 @@ span {
 
 
 #socialmedia {
-  width:  140.96px;
-  height: 33.65px;
+  width: 140.96px;
   gap: 20px;
   display: flex;
   flex-direction: row;
