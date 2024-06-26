@@ -182,7 +182,7 @@ button {
 }
 
 #steps {
-  width: 1440px;
+  width: 100%;
   height: 247px;
   margin-top: 50px;
   margin-bottom: 70px;
@@ -258,15 +258,12 @@ h2 {
 }
 
 #cubes {
-  width: 1177px;
   height: 154px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   gap: 200px;
-  position: relative;
-  left: 130px;
 }
 
 #bicyle {
@@ -494,7 +491,7 @@ span {
   gap: 250px;
   text-wrap: nowrap;
   position: relative;
-  left: 500px;
+  left: 540px;
 
 }
 
