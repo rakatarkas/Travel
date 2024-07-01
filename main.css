@@ -191,75 +191,77 @@ h2 {
 
 
 #p4 {
+  width: 320%;
   font-family: Aleo;
   font-size: 130%;
   font-weight: 400;
   color: rgba(13, 96, 111, 1);
-  white-space: nowrap;
   margin-top: -10%;
-  margin-left: -30%;
+  margin-left: -70%;
 
 }
 
 #p5 {
+  width: 320%;
   font-family: Aleo;
   font-size: 130%;
   font-weight: 400;
   color: rgba(13, 96, 111, 1);
-  white-space: nowrap;
-  margin-top: -10%;
-  margin-left: -30%;
+  margin-top: -15%;
+  margin-left: -55%;
 
 }
 
 #p6 {
+  width: 390%;
   gap: 0px;
   opacity: 0px;
   font-family: Aleo;
   font-size: 130%;
   font-weight: 400;
   color: rgba(13, 96, 111, 1);
-  white-space: nowrap;
-  margin-top: -5%;
-  margin-left: -35%;
+  margin-top: -10%;
+  margin-left: -90%;
 
 }
 
 .cubes {
   height: 200%;
-  margin-top: 15%;
+  width: 10%;
+  height: 130%;
 }
 
 #cubes {
-  width: 90%;
-  margin-left: 13%;
+  margin-top: 3%;
+  margin-left: 10%;
   height: 10em;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   gap: 13%;
+  width: 80%;
 }
 
 #bicyle {
   position: relative;
-  top: -23%;
-  left: 9%;
-  width: 20%;
+  top: -35%;
+  left: 19%;
+  width: 40%;
 }
 
 #calendar{
   position: relative;
-  top: -25%;
-  left: 10%;
-  width: 20%;
+  top: -37%;
+  left: 19%;
+  width: 40%;
 }
 
 #plane {
   position: relative;
-  top: -23%;
-  left: 6%;
-  width: 20%;
+  top: -35%;
+  left: 16%;
+  width: 40%;
 
 }
 
@@ -378,11 +380,6 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 1%;
-  margin-top: 3%;
-  position: relative;
-  left: 0%;
-
 }
 
 .more {
@@ -422,7 +419,7 @@ h2 {
 
 
 .h3 {
-  width: 60%;
+  width: 80%;
   font-family: Aleo;
   font-size: 250%;
   font-weight: 400;
@@ -433,7 +430,7 @@ h2 {
 }
 
 .ps {
-  width: 70%;
+  width: 90%;
   font-family: Aleo;
   font-size: 130%;
   font-weight: 400;
@@ -461,7 +458,7 @@ span {
 }
 
 .stories {
-  width: 140%;
+  width: 100%;
   display: flex;
   flex-direction: row-reverse;
   padding: 1%;
