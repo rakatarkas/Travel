@@ -23,7 +23,7 @@ body {
 
 header {
   width: 100%;
-  height: 15%;
+  height: 20%;
   background: rgba(242, 120, 92, 0.7);
   box-shadow: 0em 0.3em 0.3em 0em #0D606F80;
   margin: 0px;
@@ -231,6 +231,7 @@ h2 {
 }
 
 #cubes {
+  width: 90%;
   margin-left: 13%;
   height: 10em;
   display: flex;
@@ -361,32 +362,44 @@ h2 {
 
 #arrow {
   background-image: url(img/biarrow_right.png);
-  width: 40px;
-  height: 40px;
+  width: 25%;
+  height: 130%;
   background-repeat: no-repeat;
-  padding: 8.75px 2.5px 8.75px 2.5px;
   position: relative;
-  top: 17px;
+  top: 35%;
 
 }
 
 #more {
-  width: 228px;
-  height: 59px;
-  opacity: 1;
-  font-size: 24px;
+  width: 16%;
+  font-size: 170%;
+  height: 2.5em;
   font-weight: 500;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 10px;
+  margin: 1%;
+  margin-top: 3%;
   position: relative;
-  left: -4px;
+  left: 0%;
 
 }
 
+.more {
+  width: 16%;
+  font-size: 170%;
+  margin: 0px;
+  height: 2.5em;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1%;
+  position: relative;
+  left: 0%;
+}
+
 #stories {
-  margin-top: 100px;
   background-image: url(img/laken.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -394,25 +407,25 @@ h2 {
 }
 
 #staries {
-  height: 30%;
   background: rgba(255, 255, 255, 0.7);
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3%;
+  height: 77.5em;
+  padding-top: 2.5%;
+}
 
+#story {
+  margin-top: 7%;
+  margin-bottom: 3%;
 }
 
 
 .h3 {
-  width: 760px;
-  height: 42px;
-  gap: 0px;
-  opacity: 0px;
+  width: 60%;
   font-family: Aleo;
-  font-size: 35px;
+  font-size: 250%;
   font-weight: 400;
-  line-height: 42px;
   text-align: left;
   color: rgba(13, 96, 111, 1);
   margin: 0;
@@ -420,14 +433,11 @@ h2 {
 }
 
 .ps {
-  width: 760px;
-  height: 184px;
-  gap: 0px;
-  opacity: 0px;
+  width: 70%;
   font-family: Aleo;
-  font-size: 20px;
+  font-size: 130%;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 110%;
   text-align: left;
   color: rgba(13, 96, 111, 1);
 
@@ -435,9 +445,9 @@ h2 {
 
 span {
   font-family: Aleo;
-  font-size: 20px;
+  font-size: 100%;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 110%;
   text-align: left;
   text-decoration: underline;
   cursor: pointer;
@@ -445,33 +455,31 @@ span {
 }
 
 .img {
-  width: 400px;
-  height: 250px;
-  border-radius: 16px;
-  opacity: 0px;
-  box-shadow: 0px 4px 4px 0px rgba(13, 96, 111, 1);
-
+  height: 100%;
+  border-radius: 1em;
+  box-shadow: 0em 0.3em 0.3em 0em rgba(13, 96, 111, 1);
 }
 
 .stories {
-  width: 150%;
-  height: 250px;
+  width: 140%;
   display: flex;
   flex-direction: row-reverse;
-  padding: 20px;
+  padding: 1%;
+  position: relative;
+  left: -13%;
   
 }
 
 .hnp {
-  width: 1200px;
-  height: 250px;
+  width: 50%;
+  height: 1em;
   display: flex;
   flex-direction: column;
-  margin-left: 40px;
+  margin-left: 2%;
 }
 
 #footer {
-  width: 728.96px;
+  width: 50%;
   display: flex;
   flex-direction: row;
   margin: 0;
@@ -479,29 +487,25 @@ span {
   border: 0;
   align-items: center;
   justify-content: center;
-  gap: 250px;
+  gap: 40%;
   text-wrap: nowrap;
   position: relative;
-  left: 540px;
+  left: 38.5%;
 
 }
 
 #copyright {
-  width: 260px;
   font-family: Red Hat Text;
-  font-size: 16px;
+  font-size: 100%;
   font-weight: 500;
-  line-height: 21.17px;
   text-align: left;
   color: rgba(255, 255, 255, 1);
-  margin-left: 50px;
 
 }
 
 
 #socialmedia {
-  width: 140.96px;
-  gap: 20px;
+  gap: 20%;
   display: flex;
   flex-direction: row;
   align-items: center; ;
