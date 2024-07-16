@@ -1,0 +1,211 @@
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  height: 200em;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+body {
+    font-family: Arial, Verdana, sans-serif;
+}
+
+.body_wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+h1, h2 {
+    padding-bottom: 2em;
+}
+
+img {
+    max-width: 40px;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+.header_burger-btn {
+    display: none;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.header_burger-btn span {
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    left: 5px;
+    transition: background-color .5s, opacity .25s, transform.5s;
+    will-change: transform;
+}
+
+.header_burger-btn:hover span{
+    background-color: rgb(164, 147, 147);
+}
+
+.header_burger-btn span:nth-child(1){
+    transform: translatey(-10px);
+}
+
+.header_burger-btn span:nth-child(3){
+    transform: translatey(10px);
+}
+
+/* Крестик */
+
+.header.open .header_burger-btn span{
+    background-color: white;
+}
+
+.header.open .header_burger-btn span:nth-child(1){
+    transform: translatey(0) rotate(45deg);
+}
+
+.header.open .header_burger-btn span:nth-child(2){
+    opacity: 0;
+}
+
+.header.open .header_burger-btn span:nth-child(3){
+    transform: translatey(0px) rotate(-45deg);
+}
+
+span {
+    border-radius: 2em;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 30px 10px 0px 15px;
+    line-height: 2em;
+}
+
+.header {
+    box-shadow: 0px 4px 5px -1px;
+}
+
+.header_container {
+    height: 4em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.logo {
+    display: block;
+}
+
+.logo_img {
+    width: 200px;
+}
+
+.menu_list {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu_item:not(:last-child){
+    margin-right: 20px;
+}
+
+.menu_link {
+    font-size: 16px;
+    color: blueviolet;
+    text-decoration: none;
+
+}
+
+@media (max-width:760px){
+   .menu {
+    position: absolute;
+    right: -350px;
+    top: 0;
+    width: 350px;
+    background-color: violet;
+    padding: 75px 0px 0px 0px;
+    transition: transform .5s, visibility .3s;
+    border-radius: 12px;
+
+   }
+   .menu_list {
+    display: block;
+   }
+
+   .menu_item:not(:last-child) {
+    right: 0;
+    position: relative;
+   }
+
+   .menu_link {
+    color: white;
+    font-size: 21px;
+    display: block;
+    padding: 1px 0px 10px 20px;
+   }
+
+   .header_burger-btn {
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-radius: 10%;
+   }
+
+   .header.open .menu {
+    transform: translatex(-100%);
+   }
+}
