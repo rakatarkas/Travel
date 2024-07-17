@@ -5,6 +5,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -17,6 +18,10 @@ body {
 
 .icon {
   padding: 0.5em;
+  width: 90px;
+  height: 50px;
+  
+
 }
 
 
@@ -70,7 +75,7 @@ header h1 {
 }
 
 #tni {
-  width: 18%;
+  width: 19%;
   height: 50%;
   display: flex;
   flex-direction: row;
@@ -230,25 +235,34 @@ h2 {
   width: 80%;
 }
 
+.cube_bg {
+  width: 100%;
+  height: 100%;
+}
+
 #bicyle {
   position: relative;
-  top: -35%;
-  left: 19%;
-  width: 40%;
+  top: -40%;
+  left: 22%;
+  width: 100%;
+  height: 30%;
+  
 }
 
 #calendar{
   position: relative;
-  top: -37%;
-  left: 19%;
-  width: 40%;
+  top: -43%;
+  left: 22%;
+  width: 55%;
+  height: 30%;
 }
 
 #plane {
   position: relative;
-  top: -35%;
-  left: 16%;
-  width: 40%;
+  top: -40%;
+  left: 19%;
+  width: 60%;
+  height: 30%;
 
 }
 
@@ -521,25 +535,19 @@ span {
 .header_burger-btn span {
   position: absolute;
   width: 100px;
-  height: 9px;
+  height: 10px;
   background-color: white;
   left: 5px;
-  transition: background-color .5s, opacity .25s, transform.5s;
+  transition: background-color .3s, opacity .3s, transform.5s;
   will-change: transform;
 }
 
-.header_burger-btn:hover span{
-  background-color: rgb(164, 147, 147);
-  width: 60px;
-  height: 5px;
-}
-
 .header_burger-btn span:nth-child(1){
-  transform: translatey(-30px);
+  transform: translatey(-25px);
 }
 
 .header_burger-btn span:nth-child(3){
-  transform: translatey(30px);
+  transform: translatey(25px);
 }
 
 /* Крестик */
@@ -619,23 +627,24 @@ span {
 @media (max-width:380px){
 
   body {
-    overflow-x: hidden;
     position: relative;
     height: 100%;
+    overflow: hidden;
   }
 
   .header {
     background: none;
     box-shadow: none;
     width: 100%;
+    height: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0;
+    padding-top: 7%;
     gap: 80%;
-    overflow-x: hidden;
     
   }
+
 
   header {
     display: none;
@@ -653,6 +662,11 @@ span {
   #another {
     display: block;
     white-space: nowrap;
+    font-size: 200%;
+    width: 30%;
+    border-radius: 0.7em;
+    font-weight: 450;
+    letter-spacing: 1px;
   }
 
   #p1 {
@@ -664,6 +678,12 @@ span {
     display: none;
   }
 
+  #p3 {
+    font-size: 280%;
+    width: 100%;
+    color: rgba(242, 120, 92, 1);
+  }
+
   #square {
     height: 50em;
     padding: 0;
@@ -673,11 +693,13 @@ span {
   }
 
   #search {
-    height: 5em;
-    border-radius: 2.5em;
-    width: 80%;
-    padding: 2%;
+    height: 6em;
+    border-radius: 3.5em;
+    width: 85%;
+    padding: 3%;
+    padding-left: 5%;
     margin-bottom: 10em;
+    gap: 0;
 
   }
 
@@ -691,7 +713,14 @@ span {
   }
 
   #tni {
-    width: 4em;
+    width: 110px;
+    height: 100px;
+
+  }
+
+  .icon {
+    width: 110px;
+    height: 100px;
   }
 
   span {
@@ -708,33 +737,30 @@ span {
   }
 
   .menu {
-    position: absolute;
-    right: -28em;
-    top: 0;
-    width: 28em;
-    height: 39em;
+    position:absolute;
+    right: -32em;
+    top: -14em;
+    width: 32em;
+    height: 44em;
     background-color: rgba(242, 120, 92, 1);
-    padding: 80px 0px 0px 0px;
+    padding: 90px 0px 0px 0px;
     transition: transform .5s, visibility .3s;
     border-radius: 30px;
     box-shadow: 0px 4px 3px 0px rgba(13, 96, 111, 0.25);
     margin-top: 18%;
+    z-index: 1;
+    
    }
 
    .menu_list {
     display: block;
    }
 
-   .menu_item:not(:last-child) {
-    right: 0;
-    position: relative;
-   }
-
    .menu_link {
     color: white;
-    font-size: 40px;
+    font-size: 50px;
     display: block;
-    padding: 50px 30px 10px 0px;
+    padding: 60px 30px 10px 0px;
     font-weight: 500;
     text-align: right;
    }
@@ -748,6 +774,7 @@ span {
     border: transparent;
     outline: transparent;
     border-radius: 10%;
+    box-shadow: none;
    }
 
    .header.open .menu {
@@ -758,6 +785,88 @@ span {
     display: none;
    }
 
+   .header.open .header_burger-btn {
+    right: 1em;
+    top: -100px;
+    box-shadow: none;
+    transform: translate(-340%);
+    transition: transform .5s, visibility .3s;
+   }
+
+   .header.open .header_burger-btn span {
+    width: 70px;
+    height: 4px;
+   }
+
+   #steps {
+    margin-bottom: 13%;
+   }
+
+   h2 {
+    font-size: 300%;
+   }
+
+   #cubes {
+    width: 100%;
+    height: 30%;
+    margin-left: 3%;
+   }
+
+   .cubes {
+    height: 20em;
+    width: 60%;
+   }
+
+   .cube_bg {
+    width: 75%;
+    height: 75%;
+   }
+
+   #bicyle {
+    width: 80%;
+    height: 40%;
+    top: -80%;
+    left: 16%;
+   }
+
+   #calendar {
+    width: 40%;
+    height: 40%;
+    top: -82%;
+    left: 18%;
+   }
+
+   #plane {
+    width: 45%;
+    height: 40%;
+    top: -77%;
+    left: 15%;
+   }
+
+   #p4 {
+    width: 100%;
+    margin: 0;
+   }
+
+   #p5 {
+    width: 140%;
+    margin: 0;
+    left: -25%;
+   }
+
+   #p6 {
+    width: 110%;
+    margin: 0;
+    text-align: right;
+    left: -35%;
+   }
+
+   #p4, #p5, #p6 {
+    position: relative;
+    top: -50%;
+    font-size: 230%;
+   }
+
 
 }
 
@@ -786,6 +895,4 @@ span {
     max-width: 50rem;
   }
 }
-
-
 
