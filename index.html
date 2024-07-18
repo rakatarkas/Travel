@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width">
   <title>тшпф</title>
   <link rel="stylesheet" href="main.css">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
 
@@ -135,6 +140,19 @@
       
       <h2>POPULAR DESTINATIONS</h2>
 
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="/img/spain-slider.jpg" alt="Spain"></div>
+            <div class="swiper-slide"><img src="/img/japan-slider.jpg" alt="Japan"></div>
+            <div class="swiper-slide"><img src="/img/usa-slider.jpg" alt="USA"></div>
+        </div>
+       </div>
+    
+       <div class="swiper-pagination"></div>
+    
+       <div class="swiper-button-next"></div>
+       <div class="swiper-button-prev"></div>
+
       <div id="photos">
 
         <div id="destination1"></div>
@@ -257,6 +275,17 @@
 
   </main>
 <script src="script.js"></script>
+<script>var swiper = new Swiper('.mySwiper', {
+  spaceBetween: 30,
+  navigation: {
+      nextEl:'.swiper-button-next',
+      prevEl:'.swiper-button-prev',
+  },
+  pagination: {
+      el: '.swiper-pagination',
+  },
+  keyboard:true,
+})</script>
 </body>
 
 </html>

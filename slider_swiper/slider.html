@@ -9,11 +9,12 @@
 />
     <link rel="stylesheet" href="slider.css">
     <title>Слайдер Slider</title>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
 
-   <div class="swiper meSwiper">
-    <div class="slider-wrapper">
+   <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
         <div class="swiper-slide"><img src="/img/spain-slider.jpg" alt="Spain"></div>
         <div class="swiper-slide"><img src="/img/japan-slider.jpg" alt="Japan"></div>
         <div class="swiper-slide"><img src="/img/usa-slider.jpg" alt="USA"></div>
@@ -25,8 +26,7 @@
    <div class="swiper-button-next"></div>
    <div class="swiper-button-prev"></div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js">
-          import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+    <script>
 
         var swiper = new Swiper('.mySwiper', {
             spaceBetween: 30,
@@ -37,8 +37,7 @@
             pagination: {
                 el: '.swiper-pagination',
             },
-            mousewhell: true,
-            keaybord:true,
+            keyboard:true,
         })
     </script>
 </body>
