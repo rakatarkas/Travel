@@ -140,34 +140,38 @@
       
       <h2>POPULAR DESTINATIONS</h2>
 
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
+      <div class="swiper mySwiper" id="mobile-swiper">
+        <div class="swiper-wrapper" id="swiper-wrapper-mobile">
             <div class="swiper-slide"><img src="/img/spain-slider.jpg" alt="Spain" id="spain_img"><div id="spain">SPAIN</div></div>
             <div class="swiper-slide"><img src="/img/japan-slider.jpg" alt="Japan"><div id="japan">JAPAN</div></div>
             <div class="swiper-slide"><img src="/img/usa-slider.jpg" alt="USA"><div id="usa">USA</div></div>
         </div>
        </div>
     
-       <div class="swiper-pagination"></div>
+       <div class="swiper-pagination swiper-pagination-mobile"></div>
     
        <div class="swiper-button-next"></div>
        <div class="swiper-button-prev"></div>
 
       <div id="photos">
 
-        <div id="destination1"></div>
+         <div class="swiper mySwiper-desktop">
+          <div class="swiper-wrapper" id="swiper-wrapper-desktop">
+              <div class="swiper-slide"><img src="/img/sea.jpg" alt="Spain"><div id="spain">SPAIN</div></div>
+              <div class="swiper-slide"><img src="/img/japan.jpg" alt="Japan"><div id="japan">JAPAN</div></div>
+              <div class="swiper-slide"><img src="/img/usa.jpg" alt="USA"><div id="usa">USA</div></div>
+          </div>
+         </div>
 
-        <div id="destination2"><div id="japan">JAPAN</div></div>
-
-        <div id="destination3"><div id="usa"">USA</div></div>
+         <div class="swiper-pagination swiper-pagination-desktop"></div>
 
       </div>
 
-      <div id="circles">
+      <!-- <div id="circles">
         <div id="c1"></div>
         <div id="c2"></div>
         <div id="c3"></div>
-      </div>
+      </div> -->
 
       <button class="more"><div id="arrow" class="more"></div>Find More</button>
 
@@ -247,7 +251,7 @@
 
         </div>
 
-        <button id="more" class="more"><div id="arrow" class="more"></div>See More</button>
+        <button id="more" class="more"><div id="arrow-see" class="more"></div>See More</button>
 
         </div>
 
@@ -283,17 +287,28 @@
 
   </main>
 <script src="script.js"></script>
-<script>var swiper = new Swiper('.mySwiper', {
+<script>   var desktopSwiper = new Swiper('.mySwiper-desktop', {
+  spaceBetween: 0,
+  pagination: {
+      el: '.swiper-pagination-desktop',
+      clickable: true,
+  },
+  keyboard: true,
+});
+
+// Инициализация мобильного слайдера
+var mobileSwiper = new Swiper('.mySwiper', {
   spaceBetween: 30,
   navigation: {
-      nextEl:'.swiper-button-next',
-      prevEl:'.swiper-button-prev',
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
   },
   pagination: {
-      el: '.swiper-pagination',
+      el: '.swiper-pagination-mobile',
+      clickable: true,
   },
-  keyboard:true,
-})</script>
+  keyboard: true,
+});</script>
 </body>
 
 </html>
