@@ -180,6 +180,190 @@ button {
   cursor: pointer;
 }
 
+.wrapper {
+  position: relative;
+  width: 550px !important;
+  height: 600px;
+  background: linear-gradient(177.09deg, #FFFFFF 6.15%, #0D606F 202.69%);
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  transition: transform .5s ease, height .2s ease;
+  overflow: hidden;
+  transform: scale(0);
+  top: 330%;
+  left: -30%;
+  z-index: 10;
+}
+
+.wrapper.active-popup {
+  transform: scale(1);
+}
+
+.btnLogin-popup {
+  width: 10%;
+}
+
+.wrapper.active {
+  height: 390px;
+}
+
+.wrapper .form-box {
+  width: 100%;
+  padding: 40px;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper .form-box.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 85%;
+  transition: transform .18s ease;
+  transform: translateX(0);
+  
+}
+
+.wrapper.active .form-box.login {
+  transition: none;
+  transform: translateX(-550px);
+}
+
+.wrapper .form-box.register {
+  position: absolute;
+  transform: none;
+  transform: translateX(550px);
+
+}
+
+.wrapper.active .form-box.register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 85%;
+  position: absolute;
+  transition: transform .18s ease;
+  transform: translateX(-10px);
+  
+}
+
+.log {
+  color: rgba(13, 96, 111, 1);
+  font-size: 30px;
+
+}
+
+.input-box {
+  flex-direction: column-reverse;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 60px;
+  margin: 10px 0;
+}
+
+label {
+  color: rgba(13, 96, 111, 1);
+  font-size: 14px;
+}
+
+.input {
+  width: 100%;
+  height: 60px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 0px 3px 0px rgba(13, 96, 111, 1) inset;
+
+
+}
+
+.facebook {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  width: 100%;
+  height: 40px;
+  font-family: Red Hat Text;
+  background-color: rgba(24, 119, 242, 1);
+  color: #FFFFFF;
+  white-space: nowrap;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.facebook-icon {
+  background-image: url(/svg/facebook.svg);
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.google {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 40px;
+  font-family: Red Hat Text;
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(13, 96, 111, 1);
+  text-align: center;
+  border-radius: 10px;
+}
+
+.google-icon {
+  background-image: url(/svg/google.svg);
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.probel {
+  display: flex;
+  width: 100%;
+  color: rgba(13, 96, 111, 0.5);
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bolder;
+  font-size: 15px;
+
+}
+
+.line {
+  background-color: rgba(13, 96, 111, 0.5);
+  width: 45%;
+  height: 1px;
+}
+
+.forgot {
+  font-size: 15px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.line {
+  width: 100%;
+}
+
+.reg {
+  display: flex;
+  justify-content: center;
+  color:  rgba(13, 96, 111, 0.5)
+}
+
+.login-register p a {
+  color: rgba(13, 96, 111, 1);
+  font-weight: bold;
+}
 
 #square {
   padding-top: 5%;
@@ -446,6 +630,16 @@ h2 {
   flex-shrink: 0;
   
 
+}
+
+#arrow-see {
+  background-image: url(img/biarrow_right.png);
+  width: 25%;
+  height: 130%;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 35%;
+  flex-shrink: 0;
 }
 
 #more {
@@ -719,6 +913,14 @@ span {
     
   }
 
+  #arrow-see {
+    width: 25%;
+    height: 130%;
+    top: 25%;
+    flex-shrink: 0;
+    background-size: 35px;
+  }
+
   #staries {
     height: 80em;
   }
@@ -884,6 +1086,14 @@ span {
     background-size: 5.5vh;
   }
 
+  #arrow-see {
+    width: 25%;
+    height: 130%;
+    top: 25%;
+    flex-shrink: 0;
+    background-size: 27px;
+  }
+
   #story {
     margin-top: 5%;
   }
@@ -918,7 +1128,7 @@ span {
   #more {
     margin-top: 0;
     font-size: 100%;
-    width: 15.5%;
+    width: 15%;
   }
 
   #socialmedia {
@@ -986,6 +1196,10 @@ span {
   button {
     display: none;
     white-space: nowrap;
+  }
+
+  .bthLogin-popup {
+    display: none;
   }
 
   #another {
@@ -1167,6 +1381,191 @@ span {
     height: 5%;
    }
 
+   .wrapper {
+    position: relative;
+    width: 550px !important;
+    height: 600px;
+    background: linear-gradient(177.09deg, #FFFFFF 6.15%, #0D606F 202.69%);
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    transition: transform .5s ease, height .2s ease;
+    overflow: hidden;
+    transform: scale(0);
+    top: 330%;
+    left: -30%;
+    z-index: 10;
+  }
+  
+  .wrapper.active-popup {
+    transform: scale(1);
+  }
+  
+  .btnLogin-popup {
+    width: 10%;
+  }
+  
+  .wrapper.active {
+    height: 390px;
+  }
+  
+  .wrapper .form-box {
+    width: 100%;
+    padding: 40px;
+  }
+  
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .wrapper .form-box.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    transition: transform .18s ease;
+    transform: translateX(0);
+    
+  }
+  
+  .wrapper.active .form-box.login {
+    transition: none;
+    transform: translateX(-550px);
+  }
+  
+  .wrapper .form-box.register {
+    position: absolute;
+    transform: none;
+    transform: translateX(550px);
+  
+  }
+  
+  .wrapper.active .form-box.register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    position: absolute;
+    transition: transform .18s ease;
+    transform: translateX(-10px);
+    
+  }
+  
+  .log {
+    color: rgba(13, 96, 111, 1);
+    font-size: 30px;
+  
+  }
+  
+  .input-box {
+    flex-direction: column-reverse;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 60px;
+    margin: 10px 0;
+  }
+  
+  label {
+    color: rgba(13, 96, 111, 1);
+    font-size: 14px;
+  }
+  
+  .input {
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 0px 3px 0px rgba(13, 96, 111, 1) inset;
+  
+  
+  }
+  
+  .facebook {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    width: 100%;
+    height: 40px;
+    font-family: Red Hat Text;
+    background-color: rgba(24, 119, 242, 1);
+    color: #FFFFFF;
+    white-space: nowrap;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .facebook-icon {
+    background-image: url(/svg/facebook.svg);
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    position: absolute;
+  }
+  
+  .google {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 40px;
+    font-family: Red Hat Text;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(13, 96, 111, 1);
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .google-icon {
+    background-image: url(/svg/google.svg);
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    position: absolute;
+  }
+  
+  .probel {
+    display: flex;
+    width: 100%;
+    color: rgba(13, 96, 111, 0.5);
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bolder;
+    font-size: 15px;
+  
+  }
+  
+  .line {
+    background-color: rgba(13, 96, 111, 0.5);
+    width: 45%;
+    height: 1px;
+  }
+  
+  .forgot {
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  
+  .line {
+    width: 100%;
+  }
+  
+  .reg {
+    display: flex;
+    justify-content: center;
+    color:  rgba(13, 96, 111, 0.5)
+  }
+  
+  .login-register p a {
+    color: rgba(13, 96, 111, 1);
+    font-weight: bold;
+  }
+
 /* -------HEADER------- */
 
 /* -------SECTION STEPS------- */
@@ -1191,44 +1590,44 @@ span {
    }
 
    .cube_bg {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
    }
 
    #bicyle {
-    width: 120px;
+    width: 110px;
     height: 90px;
-    top: -255%;
-    left: 13%;
+    top: -250%;
+    left: 15%;
    }
 
    #calendar {
-    width: 70px;
+    width: 60px;
     height: 60px;
-    top: -268%;
-    left: 12%;
+    top: -260%;
+    left: 14%;
    }
 
    #plane {
-    width: 75px;
+    width: 65px;
     height: 40px;
-    top: -255%;
+    top: -250%;
     left: 12%;
    }
 
    #p4 {
-    width: 70%;
+    width: 85%;
     margin: 0;
     font-size: 100%;
     position: relative;
-    top: -210%;
+    top: -220%;
    }
 
    #p5 {
     font-size: 100%;
     width: 140%;
     margin: 0;
-    left: -18%;
+    left: -30%;
     position: relative;
     top: -165%;
 
@@ -1239,9 +1638,9 @@ span {
     width: 110%;
     margin: 0;
     text-align: right;
-    left: -50%;
+    left: -40%;
     position: relative;
-    top: -130%;
+    top: -125%;
    }
 
 
@@ -1651,8 +2050,8 @@ span {
    }
 
    .header.open .header_burger-btn {
-    left: 110%;
-    top: -30px;
+    left: -10%;
+    top: -15px;
     box-shadow: none;
     transform: translate(-340%);
     transition: transform .5s, visibility .3s;
@@ -1698,7 +2097,7 @@ span {
   }
 
 .header.open .header_burger-btn span {
-    width: 55%;
+    width: 70%;
     height: 5%;
    }
 
@@ -1732,34 +2131,34 @@ span {
    #bicyle {
     width: 80px;
     height: 90px;
-    top: -200%;
+    top: -195%;
     left: 16%;
    }
 
    #calendar {
     width: 40px;
     height: 60px;
-    top: -205%;
-    left: 18%;
+    top: -200%;
+    left: 17%;
    }
 
    #plane {
     width: 45px;
     height: 40px;
-    top: -200%;
+    top: -195%;
     left: 15%;
    }
 
    #p4 {
     width: 75%;
     margin: 0;
-    font-size: 70%;
+    font-size: 65%;
     position: relative;
     top: -220%;
    }
 
    #p5 {
-    font-size: 70%;
+    font-size: 65%;
     width: 140%;
     margin: 0;
     left: -18%;
@@ -1769,11 +2168,11 @@ span {
    }
 
    #p6 {
-    font-size: 70%;
+    font-size: 65%;
     width: 110%;
     margin: 0;
     text-align: right;
-    left: -50%;
+    left: -40%;
     position: relative;
     top: -115%;
    }
@@ -1942,7 +2341,7 @@ span {
 #arrow-see {
   width: 20%;
   height: 45%;
-  background-size: 67%;
+  background-size: 65%;
   top: -15%;
   background-image: url(img/biarrow_right.png);
   background-repeat: no-repeat;
@@ -1999,7 +2398,7 @@ span {
   font-weight: 450;
   gap: 0;
   padding: 8px;
-  margin-bottom: 8px;
+  margin-bottom: 15px;
 }
 
 #copyright {
@@ -2246,6 +2645,7 @@ span {
 
    #steps {
     height: 200px;
+    margin-bottom: 0;
    }
 
    #cubes {
@@ -2268,22 +2668,22 @@ span {
    #bicyle {
     width: 75px;
     height: 90px;
-    top: -180%;
+    top: -175%;
     left: 16%;
    }
 
    #calendar {
     width: 38px;
     height: 60px;
-    top: -185%;
-    left: 17%;
+    top: -180%;
+    left: 16%;
    }
 
    #plane {
     width: 40px;
     height: 40px;
-    top: -177%;
-    left: 16%;
+    top: -172%;
+    left: 15%;
    }
 
    #p4 {
@@ -2309,7 +2709,7 @@ span {
     width: 110%;
     margin: 0;
     text-align: right;
-    left: -50%;
+    left: -40%;
     position: relative;
     top: -115%;
    }
@@ -2389,11 +2789,11 @@ span {
 
 .swiper-button-next, swiper-rtl .swiper-button-prev {
   position: relative;
-  right: 35px !important;
+  right: 30px !important;
   left: auto;
   color: rgba(242, 120, 92, 1) !important;
   font-weight: bolder; 
-  top: 655px !important;
+  top: 590px !important;
   width: 0;
   height: 5px;
 
@@ -2401,23 +2801,23 @@ span {
 
 .swiper-button-prev, swiper-rtl .swiper-button-next {
   position: relative;
-  left: 35px !important;
+  left: 30px !important;
   right: auto;
   color: rgba(242, 120, 92, 1) !important;
   font-weight: bolder;
-  top: 655px !important;
+  top: 590px !important;
   width: 0;
   height: 5px;
 
 }
 
 :root {
-  --swiper-navigation-size: 30px !important;
+  --swiper-navigation-size: 25px !important;
 }
 
 .swiper-pagination {
   bottom: 0 !important;
-  top: 745px !important;
+  top: 660px !important;
   justify-content: center;
   height: 10px;
 
@@ -2425,8 +2825,8 @@ span {
 
 .swiper-pagination-bullet {
   background-color: rgba(242, 120, 92, 1) !important;
-  width: 10px !important;
-  height: 10px !important;
+  width: 9px !important;
+  height: 9px !important;
   display: flex;
 }
 
@@ -2473,13 +2873,14 @@ span {
   gap: 0;
   border-radius: 10px;
   font-weight: 450;
+  margin-top: 3%;
 }
 
-#arrow-see {
+#arrow {
   width: 20%;
   height: 45%;
-  background-size: 67%;
-  top: -15%;
+  background-size: 70%;
+  top: 0%;
   background-image: url(img/biarrow_right.png);
   background-repeat: no-repeat;
   flex-shrink: 0;
@@ -2493,7 +2894,7 @@ span {
 
 .stories {
   width: 100%;
-  height: 120%;
+  height: 22%;
   margin-left: 17%;
 }
 
@@ -2502,18 +2903,18 @@ span {
 }
 
 #staries {
-  height: 670px;
+  height: 600px;
 }
 
 .img {
-  height: 140px;
-  width: 160px;
+  height: 125px;
+  width: 150px;
   background-position: center;
   background-size: auto;
 }
 
 .h3 {
-  font-size: 80%;
+  font-size: 75%;
   font-weight: 700;
 }
 
@@ -2524,18 +2925,18 @@ span {
 
 .ps-mobile {
   display: flex;
-  font-size: 65%;
+  font-size: 58%;
   width: 95%;
 }
 
 #more {
-  height: 100px;
-  width: 23%;
+  height: 30px;
+  width: 25%;
   font-size: 75%;
   font-weight: 450;
   gap: 0;
   padding: 8px;
-  margin-bottom: 8px;
+  margin-bottom: 10;
 }
 
 #copyright {
@@ -2556,7 +2957,7 @@ span {
   gap: 10%;
   padding: 0;
   margin: 0;
-  left: 7%;
+  left: 9%;
 }
 
 #instagram {
@@ -2567,7 +2968,7 @@ span {
 
 #youtube {
   width: 31px;
-  height: 24px;
+  height: 26px;
 
 }
 
@@ -2576,4 +2977,357 @@ span {
   height: 25px;
 
 }
+}
+
+
+@media (max-width:320px){
+
+  .header {
+    width: 80%;
+    margin-left: 11%;
+  }
+
+  #preview {
+    background-size: 130%;
+  }
+
+  #square {
+    height: 220px;
+  }
+
+  .container {
+    display: block;
+    margin: 0;
+    padding: 0;
+    line-height: 160%;
+  }
+
+  .menu {
+    position:absolute;
+    right: -190px;
+    top: 5px;
+    width: 132px;
+    height: 210px;
+    background-color: rgba(242, 120, 92, 1);
+    transition: transform .5s, visibility .3s;
+    border-radius: 10px;
+    padding: 0px 5px 0px 10px;
+    box-shadow: 0px 4px 3px 0px rgba(13, 96, 111, 0.25);
+    z-index: 1;
+    
+   }
+
+   .menu_list {
+    margin-top: 35px;
+    display: block;
+
+   }
+
+   .menu_link {
+    width: 105px;
+    color: white;
+    font-size: 80%;
+    display: block;
+    font-weight: 470;
+   }
+
+   .header_burger-btn {
+    display: block;
+    position: relative;
+    width: 35px;
+    height: 40px;
+    background-color: transparent;
+    border: transparent;
+    outline: transparent;
+    border-radius: 10%;
+    box-shadow: none;
+   }
+
+   .header.open .menu {
+    transform: translate(-100%);
+   }
+
+   .desktop {
+    display: none;
+   }
+
+   .header.open .header_burger-btn {
+    left: 115%;
+    top: -15px;
+    box-shadow: none;
+    transform: translate(-340%);
+    transition: transform .5s, visibility .3s;
+   }
+
+   .header_burger-btn span {
+    position: absolute;
+    width: 25px;
+    height: 6.5%;
+    background-color: white;
+    transition: background-color .3s, opacity .3s, transform.5s;
+    will-change: transform;
+  }
+  
+  .header_burger-btn span:nth-child(1){
+    transform: translatey(-6px);
+  }
+  
+  .header_burger-btn span:nth-child(3){
+    transform: translatey(6px);
+  }
+  
+  /* Крестик */
+  
+  .header.open .header_burger-btn span{
+    background-color: white;
+  }
+  
+  .header.open .header_burger-btn span:nth-child(1){
+    transform: translatey(0) rotate(45deg);
+  }
+  
+  .header.open .header_burger-btn span:nth-child(2){
+    opacity: 0;
+  }
+  
+  .header.open .header_burger-btn span:nth-child(3){
+    transform: translatey(0px) rotate(-45deg);
+  }
+  
+  span {
+    border-radius: 2em;
+  }
+
+.header.open .header_burger-btn span {
+    width: 53%;
+    height: 4%;
+   }
+
+   #search {
+    margin-bottom: 50px;
+   }
+
+   #p3 {
+    font-size: 75%;
+   }
+
+   #another {
+    font-size: 55%;
+   }
+
+   h2 {
+    font-size: 80%;
+   }
+
+   #steps {
+    height: 160px;
+   }
+
+   #cubes {
+    width: 100%;
+    height: 20%;
+    margin-left: 7%;
+    gap: 0%;
+
+   }
+
+   .cubes {
+    height: 50px;
+    width: 100%;
+   }
+
+   .cube_bg {
+    width: 55px;
+    height: 55px;
+   }
+
+   #bicyle {
+    width: 60px;
+    height: 90px;
+    top: -190%;
+    left: 14%;
+   }
+
+   #calendar {
+    width: 30px;
+    height: 60px;
+    top: -193%;
+    left: 14%;
+   }
+
+   #plane {
+    width: 33px;
+    height: 40px;
+    top: -185%;
+    left: 13%;
+   }
+
+   #p4 {
+    width: 75%;
+    margin: 0;
+    font-size: 50%;
+    position: relative;
+    top: -250%;
+   }
+
+   #p5 {
+    font-size: 50%;
+    width: 140%;
+    margin: 0;
+    left: -15%;
+    position: relative;
+    top: -188%;
+
+   }
+
+   #p6 {
+    font-size: 50%;
+    width: 110%;
+    margin: 0;
+    text-align: right;
+    left: -55%;
+    position: relative;
+    top: -148%;
+   }
+
+   #spain {
+    font-size: 85%;
+    top: 5%;
+    left: 8%;
+   }
+
+   #japan {
+    font-size: 85%;
+    top: 5%;
+    left: 8%;
+   }
+
+   #usa {
+    font-size: 85%;
+    top: 5%;
+    left: 8%;
+   }
+
+   .swiper-slide img {
+    border-radius: 15px;
+   }
+
+   .swiper-button-next, swiper-rtl .swiper-button-prev {
+    right: 25px !important;
+    left: auto;
+    top: 510px !important;
+  
+  }
+  
+  .swiper-button-prev, swiper-rtl .swiper-button-next {
+    left: 25px !important;
+    right: auto;
+    top: 510px !important;
+  
+  }
+  
+  :root {
+    --swiper-navigation-size: 20px !important;
+  }
+  
+  .swiper-pagination {
+    top: 580px !important;
+  
+  }
+  
+  .swiper-pagination-bullet {
+    width: 8px !important;
+    height: 8px !important;
+
+}
+
+.more {
+  font-size: 60%;
+  border-radius: 5px;
+}
+
+#arrow {
+  top: 5%;
+}
+
+.stories {
+  width: 100%;
+  height: 150px;
+  margin-left: 17%;
+}
+
+#stories {
+  background-position: center;
+}
+
+#staries {
+  height: 550px;
+}
+
+.img {
+  height: 110px;
+  width: 130px;
+  background-position: center;
+  background-size: auto;
+}
+
+.h3 {
+  font-size: 60%;
+  font-weight: 700;
+}
+
+.ps {
+  display: none;
+  
+}
+
+.ps-mobile {
+  display: flex;
+  font-size: 45%;
+  width: 95%;
+}
+
+#more {
+  height: 30px;
+  width: 25%;
+  font-size: 75%;
+  font-weight: 450;
+  gap: 0;
+  padding: 8px;
+  margin-bottom: 10;
+}
+
+#more {
+  font-size: 60%;
+  padding: 4px;
+}
+
+#arrow-see {
+  background-size: 65%;
+  top: -3%;
+}
+
+#socialmedia {
+  left: 12%;
+  gap: 8%;
+}
+
+#instagram {
+  width: 27px;
+  height: 27px;
+
+}
+
+#youtube {
+  width: 28px;
+  height: 23px;
+
+}
+
+#twitrer {
+  width: 28px;
+  height: 22px;
+
+}
+
 }
